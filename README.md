@@ -133,4 +133,9 @@
 5. Выполняем скрипт в консоле браузера указанный выше
 
 #### Скриншоты
--
+- [Empty settings](https://github.com/dipiash/weather_station/raw/master/screenshots/01%20Empty%20settings.jpg)
+- [Full settings](https://raw.githubusercontent.com/dipiash/weather_station/master/screenshots/02%20Full%20settings.jpg)
+- [Graphic](https://raw.githubusercontent.com/dipiash/weather_station/master/screenshots/03%20Graphic.jpg)
+- [For mobile](https://raw.githubusercontent.com/dipiash/weather_station/master/screenshots/04%20For%20mobile.jpg)
+- [For mobile with menu](https://raw.githubusercontent.com/dipiash/weather_station/master/screenshots/05%20For%20mobile%20with%20menu.jpg)
+- [For tablet](https://raw.githubusercontent.com/dipiash/weather_station/master/screenshots/06%20For%20tablet.jpg)
