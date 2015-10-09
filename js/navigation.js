@@ -160,10 +160,10 @@
      */
     function createGetUrl(typeQuery, typeSensor, day, month, year) {
         if (typeQuery == '' && typeSensor == '') {
-            return day + '/' + month + '/' + year;
+            return parseInt(day) + '/' + parseInt(month) + '/' + year;
         }
 
-        return typeQuery + '/' + typeSensor + '/' + day + '/' + month + '/' + year;
+        return typeQuery + '/' + typeSensor + '/' + parseInt(day) + '/' + parseInt(month) + '/' + year;
     }
 
     /**
