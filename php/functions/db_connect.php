@@ -7,8 +7,7 @@
  * @param string $port
  * @return array|MongoClient
  */
-//function createDbConnect($host = 'localhost', $port = '27017') {
-function createDbConnect($host = '192.168.56.1', $port = '27017') {
+function createDbConnect($host = 'localhost', $port = '27017') {
     try {
         $connection = new MongoClient("mongodb://{$host}:{$port}");
 
