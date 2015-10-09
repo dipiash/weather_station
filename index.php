@@ -17,16 +17,16 @@ if ($parts[0] == '') {
     $arrSettings = getSettings();
 
     require_once('index.html');
-    die();
+    return;
 }
 
 if ($parts[1] == 'test') {
     require_once('php/testData.php');
-    die;
+    return;
 }
 
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-    header('Content-Type: application/json');
+    # header('Content-Type: application/json');
     # обработка запроса на вставку данных
     # $parts[0] - pushData
     # $parts[1] - ['temp', 'humm', 'press', 'gas', 'light']
@@ -42,11 +42,11 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
 
         if (isset($chekQuery['error'])) {
             echo json_encode(array('error' => 1, 'msg' => $chekQuery['msg']));
-            die();
+            return;
         }
 
         echo json_encode(array('success' => 1));
-        die();
+        return;
     }
 
     # $parts[0] - getData
@@ -64,7 +64,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         $data = getData($parts[1], $parts[2], $parts[3], $parts[4]);
 
         echo json_encode($data);
-        die();
+        return;
     }
 
     if ($parts[0] == 'getData' AND $parts[1] == 'info') {
@@ -72,14 +72,14 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         $data = getInfo();
 
         echo json_encode($data);
-        die();
+        return;
     }
 
     if ($parts[0] == 'saveSettings' AND in_array($parts[1], array('max', 'min'))) {
 
         if (!isset($_POST['val'])) {
             echo json_encode(array('error' => 1, 'msg' => 'Неверный запрос.'));
-            die();
+            return;
         }
 
         require_once('php/saveSettings.php');
@@ -87,11 +87,11 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
 
         if (isset($chekQuery['error'])) {
             echo json_encode(array('error' => 1, 'msg' => $chekQuery['msg']));
-            die();
+            return;
         }
 
         echo json_encode(array('success' => 1));
-        die();
+        return;
     }
 
     if ($parts[0] == 'getSettings') {
@@ -100,7 +100,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         $arrSettings = getSettings();
 
         echo json_encode($arrSettings);
-        die();
+        return;
     }
 
     echo json_encode(array('error' => 1, 'msg' => 'Неверный запрос #index.'));
