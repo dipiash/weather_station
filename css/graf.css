@@ -1,0 +1,215 @@
+body, .row, .cont-tldr {
+    background: #f0f0f0;
+
+}
+
+.panel.callout {
+    border: none;
+    box-shadow: 0 0 1px 1px rgba(10, 12, 18, 0.2);
+    background: #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.large-12 {
+    box-sizing: border-box;
+}
+
+.header-tldr {
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgba(10, 12, 18, 0.2);
+
+}
+
+.cont-tldr {
+    margin-top: 20px;
+}
+
+.callout.panel.text-center.clearfix > h3, .callout.panel > h5 {
+    /*color: #61af92;*/
+    color: #fff;
+}
+
+.small.button.dropdown, .button.small.ajax-btn {
+    background: #40a4bd;
+    border: 1px solid #76bda1;
+    margin-left: 1px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.button.small.ajax-btn:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #40a4bd;
+}
+
+.top-bar {
+    border: none;
+    box-shadow: 0 0 1px 1px rgba(10, 12, 18, 0.2);
+    background: #fff !important;
+    margin-bottom: 5px;
+}
+
+.top-bar ul li h1 a {
+    color: #000 !important;
+}
+
+.top-bar-section a {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.top-bar-section a:hover {
+    cursor: pointer;
+    background: #40a4bd !important;
+    color: #fff !important;
+}
+
+.setting_icon {
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-size: 30px 30px;
+    background: url("/img/setting.svg") no-repeat center !important;
+}
+
+.top-bar-section a:hover .setting_icon {
+    background: url("/img/setting_gr.svg") no-repeat center !important;
+}
+.setting_icon:hover {
+    background: url("/img/setting_gr.svg") no-repeat center !important;
+}
+
+a.active {
+    background: #40a4bd !important;
+    color: #fff !important;
+}
+
+a.active .setting_icon{
+    background: url("/img/setting_gr.svg") no-repeat center !important;
+}
+
+.name {
+    background: #40a4bd !important;
+    color: #ffffff !important;
+}
+
+.name > h1 > a {
+    font-weight: bold !important;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+    top: 50%;
+    margin-top: -16px;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    height: 34px;
+    line-height: 33px;
+    padding: 0 2.5rem 0 0.9375rem;
+    color: #fff;
+    position: relative;
+}
+
+.preload {
+    background: url('/img/svg-loaders/bars.svg') no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    background-color: #40a4bd;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px rgba(10, 12, 18, 0.2);
+}
+
+.preload-20 {
+    display: none;
+    top: 8px;
+    background-size: 15px 15px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+}
+
+#year, #month, #day {
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: -100%;
+    box-shadow: 0 0 10px 0px rgba(10, 12, 18, 0.2);
+}
+
+.btn--green {
+    background: #40a4bd !important;
+}
+
+.float-left {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.row.collapse {
+    background: #fff !important;
+}
+
+.prefix--green {
+    background: #40a4bd !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+.btn__submit {
+    cursor: pointer;
+    background: #fff !important;
+    border: 1px solid #40a4bd;
+    color: #40a4bd;
+    font-size: 1em !important;
+    font-weight: 600;
+    animation: .2s !important;
+}
+
+.btn__submit:hover {
+    background: #40a4bd !important;
+    color: #fff !important;
+}
+
+.error {
+    box-sizing: border-box;
+    top: 8px;
+    background: url("/img/error.svg") no-repeat center;
+    background-size: 15px 15px;
+    display: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(255, 79, 108, 0.68);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.error-60 {
+    margin: 10px auto;
+    background: url("/img/error.svg") no-repeat center;
+    background-size: 45px 45px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 79, 108, 0.68);
+    border-radius: 2px;
+}
+
+.bl-err p {
+    color: rgba(255, 79, 108, 0.68) !important;
+    font-weight: 600 !important;
+}
+
+.bl-err {
+    display: none;
+}
