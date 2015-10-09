@@ -1,0 +1,24 @@
+# установим, что бы русские символы нормально отображались
+AddDefaultCharset utf-8
+
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /index.php [L,QSA]
+
+    # включаем механизм преобразования
+    #RewriteEngine On
+    # устанавливаем базовый URL для преобразований
+    #RewriteBase /
+    # здесь делаем исключения для нашего фавикона, файла управления индексацией robots.txt и для файла со стилями
+    #RewriteCond %{REQUEST_FILENAME} !\.ico|\.txt|\.css
+    # абсолютно все остальные запросы ведём на файл index.php
+    #RewriteRule .* index.php [L,QSA]
+</IfModule>
