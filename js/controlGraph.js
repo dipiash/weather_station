@@ -33,7 +33,7 @@ function createBtnGroup(sensorTypes) {
     for (var i = 0; i < sensorTypes.length; i++) {
         var group = '<li> \
                     <button href="#" data-dropdown="' + sensorTypes[i] + 'Day" aria-controls="' + sensorTypes[i] + 'Day" aria-expanded="false" \
-                    class="small button dropdown">Выбрать день\
+                    class="small button dropdown">Choose the day\
                     </button>\
                     <br>\
                     <ul id="' + sensorTypes[i] + 'Day" data-dropdown-content class="f-dropdown days" aria-hidden="true">\
@@ -74,7 +74,7 @@ function createBtnGroup(sensorTypes) {
                     </li>\
                 <li>\
                     <button href="#" data-dropdown="' + sensorTypes[i] + 'Month" aria-controls="' + sensorTypes[i] + 'Month" aria-expanded="false"\
-                    class="small button dropdown">Выбрать месяц\
+                    class="small button dropdown">Choose the month\
                     </button>\
                     <br>\
                     <ul id="' + sensorTypes[i] + 'Month" data-dropdown-content class="f-dropdown months" aria-hidden="true">\
@@ -96,7 +96,7 @@ function createBtnGroup(sensorTypes) {
                 </li>\
                 <li>\
                     <button href="#" data-dropdown="' + sensorTypes[i] + 'Year" aria-controls="' + sensorTypes[i] + 'Month" aria-expanded="false"\
-                    class="small button dropdown">Выбрать год\
+                    class="small button dropdown">Choose the year\
                     </button>\
                     <br>\
                     <ul id="' + sensorTypes[i] + 'Year" data-dropdown-content class="f-dropdown years" aria-hidden="true" style="max-height: 200px; overflov-y: auto;">\
@@ -122,7 +122,7 @@ function createBtnGroup(sensorTypes) {
                     </ul>\
                 </li>\
                 <li>\
-                    <a href="/getData/' + sensorTypes[i] + '/' + dayNow + '/' + monthNow + '/' + yearNow + '" id="' + sensorTypes[i] + '-aj-btn" class="button small ajax-btn">Подтвердить</a>\
+                    <a href="/getData/' + sensorTypes[i] + '/' + dayNow + '/' + monthNow + '/' + yearNow + '" id="' + sensorTypes[i] + '-aj-btn" class="button small ajax-btn">Apply</a>\
                 </li>';
 
         if (sensorTypes[i] == 'temp') {
