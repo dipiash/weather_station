@@ -272,33 +272,33 @@
      * @param title
      */
     function createTitleGraf(title) {
-        var header = 'График ',
+        var header = 'Chart of ',
             sensor = '';
 
         switch (title) {
             case 'temp':
-                sensor = 'температуры';
+                sensor = 'temperature';
                 break
 
             case 'humm':
-                sensor = 'влажности';
+                sensor = 'humidity';
                 break
 
             case 'press':
-                sensor = 'давления';
+                sensor = 'pressure';
                 break
 
             case 'gas':
-                sensor = 'загазованности';
+                sensor = 'gas pollution';
                 break
 
             case 'light':
-                sensor = 'освещенности';
+                sensor = 'illumination';
                 break;
 
             case 'setting':
-                header = 'Настройки: ';
-                sensor = 'допустимые показатели';
+                header = 'Settings: ';
+                sensor = 'acceptable indicators';
                 break;
         }
 
