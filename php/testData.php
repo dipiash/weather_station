@@ -2,15 +2,12 @@
 
 // https://php.net/manual/ru/class.mongodate.php
 
-# получаем день, месяц и год
 $day = date('j');
 $month = date('m');
 $year = date('y');
 
-# формируем строку год-месяц-день
 $strYMD = $year."-".$month."-".$day;
 
-# формируем временные интервалы
 $arrayTimeInterval = array();
 for ($i = 0; $i < 25; $i++) {
     if ($i < 10) {
@@ -24,8 +21,6 @@ for ($i = 0; $i < 25; $i++) {
 echo "Time intervals:<br>";
 print_r($arrayTimeInterval);
 echo "<hr>";
-//$strStart =  strftime("%Y-%m-%d %H:%M:%S", time() - 2*60*60);
-//$strEnd =  strftime("%Y-%m-%d %H:%M:%S", time() - 2*60*60);
 
 require_once('php/functions/db_connect.php');
 
