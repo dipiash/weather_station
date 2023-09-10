@@ -1,19 +1,15 @@
 <?php
 
 function saveSettings($typeSetting, $values) {
-    # подключаем функцию соединения с БД и выбора коллекции
     require_once('functions/db_connect.php');
-    # подключаем функцию вставки данных в БД
     require_once('functions/insertData.php');
 
     $connection = createDbConnect();
 
-    # выбираем коллекцию
     $collection = choseSettingsCollection($connection, 'weth', 'settings');
 
     if (is_object($collection)) {
 
-        # записываем данные в коллекцию
         $insData = insertSettingsData($collection, $typeSetting, $values);
         if (isset($insData['error'])) {
 
@@ -24,7 +20,6 @@ function saveSettings($typeSetting, $values) {
 
         $connection->close();
 
-        # если все прошло успешно
         return 1;
     }
 
