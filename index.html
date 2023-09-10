@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/foundation.css"/>
     <link rel="stylesheet" href="./css/graf.css"/>
 
-    <title>Погодная станция</title>
+    <title>Weather Station</title>
 </head>
 <body>
 
@@ -22,13 +22,13 @@
     <section class="top-bar-section">
         <!-- Left Nav Section -->
         <ul>
-            <li><a href="/getData/info/" class="ajax-nav active" data-sensor="all">Общая информация</a>
+            <li><a href="/getData/info/" class="ajax-nav active" data-sensor="all">General information</a>
             </li>
-            <li><a href="/getData/temp/" class="ajax-nav" data-sensor="temp">Температура</a></li>
-            <li><a href="/getData/humm/" class="ajax-nav" data-sensor="humm">Влажность</a></li>
-            <li><a href="/getData/press/" class="ajax-nav" data-sensor="press">Давление</a></li>
-            <li><a href="/getData/gas/" class="ajax-nav" data-sensor="gas">Загазованность</a></li>
-            <li><a href="/getData/light/" class="ajax-nav" data-sensor="light">Освещенность</a></li>
+            <li><a href="/getData/temp/" class="ajax-nav" data-sensor="temp">Temperature</a></li>
+            <li><a href="/getData/humm/" class="ajax-nav" data-sensor="humm">Hummidity</a></li>
+            <li><a href="/getData/press/" class="ajax-nav" data-sensor="press">Pressure</a></li>
+            <li><a href="/getData/gas/" class="ajax-nav" data-sensor="gas">Gas pollution</a></li>
+            <li><a href="/getData/light/" class="ajax-nav" data-sensor="light">Illumination</a></li>
             <li>
                 <a href="/settings/" class="ajax-nav" data-sensor="setting">
                     <span class="setting_icon"></span>
@@ -44,11 +44,11 @@
             <div class="large-12 columns">
                 <div class="large-6 medium-6 columns">
                     <div class="callout panel text-center clearfix">
-                        <h3 style="color: #e33239;">Температура</h3>
+                        <h3 style="color: #e33239;">Temperature</h3>
 
                         <!--<div class="preload"></div>-->
                         <div class="large-6 columns text-center">
-                            <img src="img/temp.svg" alt="Температура"/>
+                            <img src="img/temp.svg" alt="Temperature"/>
                         </div>
                         <div class="large-6 columns text-center tempVal">
                             <h3><span class="value">
@@ -57,18 +57,18 @@
 
                             <div class="bl-err large-12 text-center">
                                 <div class="error-60"></div>
-                                <p>Выход за границы диапазона</p>
+                                <p>Out of range</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="large-6 medium-6 columns">
                     <div class="callout panel text-center clearfix">
-                        <h3 style="color: #e0b020;">Влажность</h3>
+                        <h3 style="color: #e0b020;">Hummidity</h3>
 
                         <!--<div class="preload"></div>-->
                         <div class="large-6 columns text-center">
-                            <img src="img/hummid.svg" alt="Влажность"/>
+                            <img src="img/hummid.svg" alt="Hummidity"/>
                         </div>
                         <div class="large-6 columns text-center hummVal">
                             <h3><span class="value">
@@ -77,7 +77,7 @@
 
                             <div class="bl-err large-12 text-center">
                                 <div class="error-60"></div>
-                                <p>Выход за границы диапазона</p>
+                                <p>Out of range</p>
                             </div>
                         </div>
                     </div>
@@ -86,11 +86,11 @@
             <div class="large-12 columns">
                 <div class="large-4 medium-6 small-12 columns">
                     <div class="callout panel text-center clearfix">
-                        <h3 style="color: #1daf3e;">Давление</h3>
+                        <h3 style="color: #1daf3e;">Pressure</h3>
 
                         <!--<div class="preload"></div>-->
                         <div class="large-6 columns text-center">
-                            <img src="img/pressure.svg" alt="Давление"/>
+                            <img src="img/pressure.svg" alt="Pressure"/>
                         </div>
                         <div class="large-6 columns text-center pressVal">
                             <h3><span class="value">
@@ -99,18 +99,18 @@
 
                             <div class="bl-err large-12 text-center">
                                 <div class="error-60"></div>
-                                <p>Выход за границы диапазона</p>
+                                <p>Out of range</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="large-4 medium-6 small-12 columns">
                     <div class="callout panel text-center clearfix">
-                        <h3 style="color: #09e;">Загазованность</h3>
+                        <h3 style="color: #09e;">Gas pollution</h3>
 
                         <!--<div class="preload"></div>-->
                         <div class="large-6 columns">
-                            <img src="img/gas.svg" alt="Загазованность"/>
+                            <img src="img/gas.svg" alt="Gas pollution"/>
                         </div>
                         <div class="large-6 columns text-center gasVal">
                             <h3><span class="value">
@@ -119,18 +119,18 @@
 
                             <div class="bl-err large-12 text-center">
                                 <div class="error-60"></div>
-                                <p>Выход за границы диапазона</p>
+                                <p>Out of range</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="large-4 medium-12 small-12 columns">
                     <div class="callout panel text-center clearfix">
-                        <h3 style="color: #b678fd;">Освещенность</h3>
+                        <h3 style="color: #b678fd;">Illumination</h3>
 
                         <!--<div class="preload"></div>-->
                         <div class="large-6 columns text-center">
-                            <img src="img/light.svg" alt="Освещенность" style="f"/>
+                            <img src="img/light.svg" alt="Illumination" style="f"/>
                         </div>
                         <div class="large-6 columns text-center lightVal">
                             <h3><span class="value">
@@ -139,7 +139,7 @@
 
                             <div class="bl-err large-12 text-center">
                                 <div class="error-60"></div>
-                                <p>Выход за границы диапазона</p>
+                                <p>Out of range</p>
                             </div>
                         </div>
                     </div>
@@ -152,89 +152,89 @@
         <div class="large-9 large-centered column cont-tldr">
             <div class="large-12 medium-12 columns">
                 <div class="callout panel text-center clearfix grafpanel">
-                    <h3 style="color: #000;" class="titlegraf">График температуры</h3>
+                    <h3 style="color: #000;" class="titlegraf">Temperature chart</h3>
                     <ul class="button-group radius large-centered">
                         <li><a href="#" data-dropdown="day" aria-controls="day" aria-expanded="false"
-                               class="tiny button dropdown btn--green">День: <span class="val-day"></span></a></li>
+                               class="tiny button dropdown btn--green">Day: <span class="val-day"></span></a></li>
                         <li><a href="#" data-dropdown="month" aria-controls="month" aria-expanded="false"
-                               class="tiny button dropdown btn--green">Месяц: <span class="val-month"></span></a></li>
+                               class="tiny button dropdown btn--green">Month: <span class="val-month"></span></a></li>
                         <li><a href="#" data-dropdown="year" aria-controls="year" aria-expanded="false"
-                               class="tiny button dropdown btn--green">Год: <span class="val-year"></span></a></li>
+                               class="tiny button dropdown btn--green">Year: <span class="val-year"></span></a></li>
                     </ul>
                     <ul id="day" data-dropdown-content class="f-dropdown" aria-hidden="true">
-                        <li><a data-value="1" href="#">День: 1</a></li>
-                        <li><a data-value="2" href="#">День: 2</a></li>
-                        <li><a data-value="3" href="#">День: 3</a></li>
-                        <li><a data-value="4" href="#">День: 4</a></li>
-                        <li><a data-value="5" href="#">День: 5</a></li>
-                        <li><a data-value="6" href="#">День: 6</a></li>
-                        <li><a data-value="7" href="#">День: 7</a></li>
-                        <li><a data-value="8" href="#">День: 8</a></li>
-                        <li><a data-value="9" href="#">День: 9</a></li>
-                        <li><a data-value="10" href="#">День: 10</a></li>
-                        <li><a data-value="11" href="#">День: 11</a></li>
-                        <li><a data-value="12" href="#">День: 12</a></li>
-                        <li><a data-value="13" href="#">День: 13</a></li>
-                        <li><a data-value="14" href="#">День: 14</a></li>
-                        <li><a data-value="15" href="#">День: 15</a></li>
-                        <li><a data-value="16" href="#">День: 16</a></li>
-                        <li><a data-value="17" href="#">День: 17</a></li>
-                        <li><a data-value="18" href="#">День: 18</a></li>
-                        <li><a data-value="19" href="#">День: 19</a></li>
-                        <li><a data-value="20" href="#">День: 20</a></li>
-                        <li><a data-value="21" href="#">День: 21</a></li>
-                        <li><a data-value="22" href="#">День: 22</a></li>
-                        <li><a data-value="23" href="#">День: 23</a></li>
-                        <li><a data-value="24" href="#">День: 24</a></li>
-                        <li><a data-value="25" href="#">День: 25</a></li>
-                        <li><a data-value="26" href="#">День: 26</a></li>
-                        <li><a data-value="27" href="#">День: 27</a></li>
-                        <li><a data-value="28" href="#">День: 28</a></li>
-                        <li><a data-value="29" href="#">День: 29</a></li>
-                        <li><a data-value="30" href="#">День: 30</a></li>
-                        <li><a data-value="31" href="#">День: 31</a></li>
+                        <li><a data-value="1" href="#">Day: 1</a></li>
+                        <li><a data-value="2" href="#">Day: 2</a></li>
+                        <li><a data-value="3" href="#">Day: 3</a></li>
+                        <li><a data-value="4" href="#">Day: 4</a></li>
+                        <li><a data-value="5" href="#">Day: 5</a></li>
+                        <li><a data-value="6" href="#">Day: 6</a></li>
+                        <li><a data-value="7" href="#">Day: 7</a></li>
+                        <li><a data-value="8" href="#">Day: 8</a></li>
+                        <li><a data-value="9" href="#">Day: 9</a></li>
+                        <li><a data-value="10" href="#">Day: 10</a></li>
+                        <li><a data-value="11" href="#">Day: 11</a></li>
+                        <li><a data-value="12" href="#">Day: 12</a></li>
+                        <li><a data-value="13" href="#">Day: 13</a></li>
+                        <li><a data-value="14" href="#">Day: 14</a></li>
+                        <li><a data-value="15" href="#">Day: 15</a></li>
+                        <li><a data-value="16" href="#">Day: 16</a></li>
+                        <li><a data-value="17" href="#">Day: 17</a></li>
+                        <li><a data-value="18" href="#">Day: 18</a></li>
+                        <li><a data-value="19" href="#">Day: 19</a></li>
+                        <li><a data-value="20" href="#">Day: 20</a></li>
+                        <li><a data-value="21" href="#">Day: 21</a></li>
+                        <li><a data-value="22" href="#">Day: 22</a></li>
+                        <li><a data-value="23" href="#">Day: 23</a></li>
+                        <li><a data-value="24" href="#">Day: 24</a></li>
+                        <li><a data-value="25" href="#">Day: 25</a></li>
+                        <li><a data-value="26" href="#">Day: 26</a></li>
+                        <li><a data-value="27" href="#">Day: 27</a></li>
+                        <li><a data-value="28" href="#">Day: 28</a></li>
+                        <li><a data-value="29" href="#">Day: 29</a></li>
+                        <li><a data-value="30" href="#">Day: 30</a></li>
+                        <li><a data-value="31" href="#">Day: 31</a></li>
                     </ul>
                     <ul id="month" data-dropdown-content class="f-dropdown" aria-hidden="true">
-                        <li><a data-value="1" href="#">Месяц: 1</a></li>
-                        <li><a data-value="2" href="#">Месяц: 2</a></li>
-                        <li><a data-value="3" href="#">Месяц: 3</a></li>
-                        <li><a data-value="4" href="#">Месяц: 4</a></li>
-                        <li><a data-value="5" href="#">Месяц: 5</a></li>
-                        <li><a data-value="6" href="#">Месяц: 6</a></li>
-                        <li><a data-value="7" href="#">Месяц: 7</a></li>
-                        <li><a data-value="8" href="#">Месяц: 8</a></li>
-                        <li><a data-value="9" href="#">Месяц: 9</a></li>
-                        <li><a data-value="10" href="#">Месяц: 10</a></li>
-                        <li><a data-value="11" href="#">Месяц: 11</a></li>
-                        <li><a data-value="12" href="#">Месяц: 12</a></li>
+                        <li><a data-value="1" href="#">Month: 1</a></li>
+                        <li><a data-value="2" href="#">Month: 2</a></li>
+                        <li><a data-value="3" href="#">Month: 3</a></li>
+                        <li><a data-value="4" href="#">Month: 4</a></li>
+                        <li><a data-value="5" href="#">Month: 5</a></li>
+                        <li><a data-value="6" href="#">Month: 6</a></li>
+                        <li><a data-value="7" href="#">Month: 7</a></li>
+                        <li><a data-value="8" href="#">Month: 8</a></li>
+                        <li><a data-value="9" href="#">Month: 9</a></li>
+                        <li><a data-value="10" href="#">Month: 10</a></li>
+                        <li><a data-value="11" href="#">Month: 11</a></li>
+                        <li><a data-value="12" href="#">Month: 12</a></li>
                     </ul>
                     <ul id="year" data-dropdown-content class="f-dropdown" aria-hidden="true">
-                        <li><a href="#" data-value="15">Год: 2015</a></li>
-                        <li><a href="#" data-value="16">Год: 2016</a></li>
-                        <li><a href="#" data-value="17">Год: 2017</a></li>
-                        <li><a href="#" data-value="18">Год: 2018</a></li>
-                        <li><a href="#" data-value="19">Год: 2019</a></li>
-                        <li><a href="#" data-value="20">Год: 2020</a></li>
-                        <li><a href="#" data-value="21">Год: 2021</a></li>
-                        <li><a href="#" data-value="22">Год: 2022</a></li>
-                        <li><a href="#" data-value="23">Год: 2023</a></li>
-                        <li><a href="#" data-value="24">Год: 2024</a></li>
-                        <li><a href="#" data-value="25">Год: 2025</a></li>
-                        <li><a href="#" data-value="26">Год: 2026</a></li>
-                        <li><a href="#" data-value="27">Год: 2027</a></li>
-                        <li><a href="#" data-value="28">Год: 2028</a></li>
-                        <li><a href="#" data-value="29">Год: 2029</a></li>
-                        <li><a href="#" data-value="30">Год: 2030</a></li>
-                        <li><a href="#" data-value="31">Год: 2031</a></li>
-                        <li><a href="#" data-value="32">Год: 2032</a></li>
-                        <li><a href="#" data-value="33">Год: 2033</a></li>
-                        <li><a href="#" data-value="34">Год: 2034</a></li>
-                        <li><a href="#" data-value="35">Год: 2035</a></li>
-                        <li><a href="#" data-value="36">Год: 2036</a></li>
-                        <li><a href="#" data-value="37">Год: 2037</a></li>
-                        <li><a href="#" data-value="38">Год: 2038</a></li>
-                        <li><a href="#" data-value="39">Год: 2039</a></li>
-                        <li><a href="#" data-value="40">Год: 2040</a></li>
+                        <li><a href="#" data-value="15">Year: 2015</a></li>
+                        <li><a href="#" data-value="16">Year: 2016</a></li>
+                        <li><a href="#" data-value="17">Year: 2017</a></li>
+                        <li><a href="#" data-value="18">Year: 2018</a></li>
+                        <li><a href="#" data-value="19">Year: 2019</a></li>
+                        <li><a href="#" data-value="20">Year: 2020</a></li>
+                        <li><a href="#" data-value="21">Year: 2021</a></li>
+                        <li><a href="#" data-value="22">Year: 2022</a></li>
+                        <li><a href="#" data-value="23">Year: 2023</a></li>
+                        <li><a href="#" data-value="24">Year: 2024</a></li>
+                        <li><a href="#" data-value="25">Year: 2025</a></li>
+                        <li><a href="#" data-value="26">Year: 2026</a></li>
+                        <li><a href="#" data-value="27">Year: 2027</a></li>
+                        <li><a href="#" data-value="28">Year: 2028</a></li>
+                        <li><a href="#" data-value="29">Year: 2029</a></li>
+                        <li><a href="#" data-value="30">Year: 2030</a></li>
+                        <li><a href="#" data-value="31">Year: 2031</a></li>
+                        <li><a href="#" data-value="32">Year: 2032</a></li>
+                        <li><a href="#" data-value="33">Year: 2033</a></li>
+                        <li><a href="#" data-value="34">Year: 2034</a></li>
+                        <li><a href="#" data-value="35">Year: 2035</a></li>
+                        <li><a href="#" data-value="36">Year: 2036</a></li>
+                        <li><a href="#" data-value="37">Year: 2037</a></li>
+                        <li><a href="#" data-value="38">Year: 2038</a></li>
+                        <li><a href="#" data-value="39">Year: 2039</a></li>
+                        <li><a href="#" data-value="40">Year: 2040</a></li>
                     </ul>
                     <div class="preload"></div>
                     <div id="graf-block" class="large-12 column text-center">
@@ -249,20 +249,20 @@
         <div class="large-9 large-centered column cont-tldr">
             <div class="large-12 medium-12 columns">
                 <div class="callout panel text-center clearfix grafpanel">
-                    <h3 class="large-centered" style="color: #000;">Настройки</h3>
+                    <h3 class="large-centered" style="color: #000;">Settings</h3>
                     <hr/>
 
                     <div class="large-6 medium-12 columns">
-                        <h4 style="color: #000;" class="title">Максимальные допустимые показатели</h4>
+                        <h4 style="color: #000;" class="title">Maximum allowable indicators</h4>
                         <hr/>
                         <form action="" id="maxValues">
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Температура</span>
+                                        <span class="prefix prefix--green">Temperature</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="temp" placeholder="Температура"
+                                        <input type="text" name="temp" placeholder="Temperature"
                                                value="<?php echo $arrSettings['max']['temp']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -274,10 +274,10 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Влажность</span>
+                                        <span class="prefix prefix--green">Hummidity</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="humm" placeholder="Влажность"
+                                        <input type="text" name="humm" placeholder="Hummidity"
                                                value="<?php echo $arrSettings['max']['humm']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -289,14 +289,14 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Давление</span>
+                                        <span class="prefix prefix--green">Pressure</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="press" placeholder="Давление"
+                                        <input type="text" name="press" placeholder="Pressure"
                                                value="<?php echo $arrSettings['max']['press']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
-                                        <span class="postfix">кПа</span>
+                                        <span class="postfix">kPa</span>
                                     </div>
                                 </div>
                             </div>
@@ -304,10 +304,10 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Загазованность</span>
+                                        <span class="prefix prefix--green">Gas pollution</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="gas" placeholder="Загазованность"
+                                        <input type="text" name="gas" placeholder="Gas pollution"
                                                value="<?php echo $arrSettings['max']['gas']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -319,14 +319,14 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Освещенность</span>
+                                        <span class="prefix prefix--green">Illumination</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="light" placeholder="Освещенность"
+                                        <input type="text" name="light" placeholder="Illumination"
                                                value="<?php echo $arrSettings['max']['light']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
-                                        <span class="postfix">лк</span>
+                                        <span class="postfix">lux</span>
                                     </div>
                                 </div>
                             </div>
@@ -340,16 +340,16 @@
                     </div>
 
                     <div class="large-6 medium-12 columns">
-                        <h4 style="color: #000;" class="title">Минимальные допустимые показатели</h4>
+                        <h4 style="color: #000;" class="title">Minimum acceptable values</h4>
                         <hr/>
                         <form action="" id="minValues">
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Температура</span>
+                                        <span class="prefix prefix--green">Temperature</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="temp" placeholder="Температура"
+                                        <input type="text" name="temp" placeholder="Temperature"
                                                value="<?php echo $arrSettings['min']['temp']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -361,10 +361,10 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Влажность</span>
+                                        <span class="prefix prefix--green">Hummidity</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="humm" placeholder="Влажность"
+                                        <input type="text" name="humm" placeholder="Hummidity"
                                                value="<?php echo $arrSettings['min']['humm']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -376,14 +376,14 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Давление</span>
+                                        <span class="prefix prefix--green">Pressure</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="press" placeholder="Давление"
+                                        <input type="text" name="press" placeholder="Pressure"
                                                value="<?php echo $arrSettings['min']['press']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
-                                        <span class="postfix">кПа</span>
+                                        <span class="postfix">kPa</span>
                                     </div>
                                 </div>
                             </div>
@@ -391,10 +391,10 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Загазованность</span>
+                                        <span class="prefix prefix--green">Gas pollution</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="gas" placeholder="Загазованность"
+                                        <input type="text" name="gas" placeholder="Gas pollution"
                                                value="<?php echo $arrSettings['min']['gas']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
@@ -406,14 +406,14 @@
                             <div class="large-12 columns large-centered">
                                 <div class="row collapse prefix-radius">
                                     <div class="large-5 medium-4 small-12 columns">
-                                        <span class="prefix prefix--green">Освещенность</span>
+                                        <span class="prefix prefix--green">Illumination</span>
                                     </div>
                                     <div class="large-6 medium-7 small-10 columns">
-                                        <input type="text" name="light" placeholder="Освещенность"
+                                        <input type="text" name="light" placeholder="Illumination"
                                                value="<?php echo $arrSettings['min']['light']; ?>">
                                     </div>
                                     <div class="large-1 medium-1 small-2 columns">
-                                        <span class="postfix">лк</span>
+                                        <span class="postfix">lux</span>
                                     </div>
                                 </div>
                             </div>
@@ -431,7 +431,7 @@
     </div>
 </div>
 
-<!-- Подключаем скрипты -->
+<!-- Scripts -->
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/Chart.min.js"></script>
 <script src="js/vendor/jquery.js"></script>
