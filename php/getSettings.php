@@ -3,12 +3,10 @@
 function getSettings()
 {
 
-    # подключаем функцию соединения с БД и выбора коллекции
     require_once('functions/db_connect.php');
 
     $connection = createDbConnect();
 
-    # выбираем коллекцию
     $collection = choseSettingsCollection($connection, 'weth', 'settings');
 
     if (is_object($collection)) {
