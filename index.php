@@ -1,12 +1,12 @@
 <?php
 
-// Получаем запрос, удаляя пробелы и слеши в начале и конце строки
+// Receive the request by removing spaces and slashes at the beginning and end of the line
 $request = trim($_SERVER["REQUEST_URI"], '/');
 
-// на всякий случай декодируем
+// decode
 $request = urldecode($request);
 
-// Разбиваем запрос на части
+// divide request to parts
 $parts = explode('/', $request);
 
 $parts = array_filter($parts, 'trim');
@@ -27,7 +27,7 @@ if ($parts[1] == 'test') {
 
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
     # header('Content-Type: application/json');
-    # обработка запроса на вставку данных
+    # handle request for data insert
     # $parts[0] - pushData
     # $parts[1] - ['temp', 'humm', 'press', 'gas', 'light']
     # $parts[2] - value
@@ -35,7 +35,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         if (!isset($parts[2])) {
             $parts[2] = 0;
         }
-        # подключаем файл для отправки данных
+        # include file to send data
         require_once('php/pushDataController.php');
 
         $chekQuery = pushData($parts[1], $parts[2]);
@@ -59,7 +59,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         isset ($parts[2]) AND isset($parts[3]) AND
         isset($parts[4])) {
 
-        # подключаем файл для запроса данных
+        # include file to request data
         require_once('php/getData.php');
         $data = getData($parts[1], $parts[2], $parts[3], $parts[4]);
 
@@ -78,7 +78,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
     if ($parts[0] == 'saveSettings' AND in_array($parts[1], array('max', 'min'))) {
 
         if (!isset($_POST['val'])) {
-            echo json_encode(array('error' => 1, 'msg' => 'Неверный запрос.'));
+            echo json_encode(array('error' => 1, 'msg' => 'Incorrect request.'));
             return;
         }
 
@@ -103,7 +103,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
         return;
     }
 
-    echo json_encode(array('error' => 1, 'msg' => 'Неверный запрос #index.'));
+    echo json_encode(array('error' => 1, 'msg' => 'Incorrect request #index.'));
 } else {
     header("Location: /");
 }
