@@ -2,7 +2,6 @@
 function getInfo() {
     $dictionaryType = array('temp', 'humm', 'press', 'gas', 'light');
 
-    # подключаем функцию соединения с БД и выбора коллекции
     require_once('functions/db_connect.php');
 
     $connection = createDbConnect();
@@ -13,7 +12,6 @@ function getInfo() {
             $retData = array();
 
             for ($i = 0; $i < count($dictionaryType); $i++) {
-                # запрашиваем данные  по типу
                 $query = array('type' => $dictionaryType[$i]);
 
                 $cursor = $collection->find($query)->sort(array("_id" => -1))->limit(1);
