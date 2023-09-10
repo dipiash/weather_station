@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Получить данные для датчика.
+ * Get data from sensor
  *
  * @param $type
  * @param $day
@@ -17,10 +17,10 @@ function getData($type, $day, $month, $year)
         return array('error' => 1, 'msg' => 'Неверный тип датчика.');
     }
 
-    # формируем строку год-месяц-день
+    # format string year-month-day
     $strYMD = $year . "-" . $month . "-" . $day;
 
-    # формируем временные интервалы
+    # formad time ranges
     $arrayTimeInterval = array();
     for ($i = 0; $i < 25; $i++) {
         if ($i < 10) {
@@ -31,7 +31,7 @@ function getData($type, $day, $month, $year)
         array_push($arrayTimeInterval, $strYMD . " " . $hour . ":00:00");
     }
 
-    # подключаем функцию соединения с БД и выбора коллекции
+    # connect the function of connecting to the database and selecting a collection
     require_once('functions/db_connect.php');
 
     $connection = createDbConnect();
@@ -39,14 +39,10 @@ function getData($type, $day, $month, $year)
     $collection = choseCollection($connection, 'weth', 'weth', $day, $month, $year);
 
     if (is_object($collection)) {
-
-//        # запрашиваем данные  по типу
-//        $query = array('type' => $type);
-
         try {
 
             $arrData = array($type => array());
-            # запрашиваем данные для каждого промежутка
+            # request data for each interval
             for ($i = 0; $i < count($arrayTimeInterval) - 1; $i++) {
                 $start = new MongoDate(strtotime($arrayTimeInterval[$i]) + 3*60*60);
                 $end = new MongoDate(strtotime($arrayTimeInterval[$i+1]) + 3*60*60);
@@ -61,10 +57,10 @@ function getData($type, $day, $month, $year)
 
             $connection->close(true);
 
-            # данные которые будет возвращать функуия
+            # data that the function will return
             $resultValue = array();
 
-            # получаем ключи промежутков
+            # the keys of the intervals
             $keys = array_keys($arrData[$type]);
 
             for ($i = 0; $i < count($keys); $i++) {
