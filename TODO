@@ -3,7 +3,7 @@ function generateValues(min, max, flag) {
 
     console.log('type= ' + type)
 
-     // генерировать отрицательные
+     // generate negative
         if (type === 1) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
@@ -94,11 +94,11 @@ generateData(3);
 generateData(4);
 generateData(5);
 
-# включаем механизм преобразования
+# turn on the conversion mechanism
     #RewriteEngine On
-    # устанавливаем базовый URL для преобразований
+    # set the base URL for conversions
     #RewriteBase /
-    # здесь делаем исключения для нашего фавикона, файла управления индексацией robots.txt и для файла со стилями
+    # here we do exceptions for our favicon, robots.txt indexing control file and for the style file
     #RewriteCond %{REQUEST_FILENAME} !\.ico|\.txt|\.css
-    # абсолютно все остальные запросы ведём на файл index.php
+    # absolutely all other requests are sent to the index.php file
     #RewriteRule .* index.php [L,QSA]
